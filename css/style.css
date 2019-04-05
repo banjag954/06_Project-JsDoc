@@ -327,10 +327,10 @@ b {
       position: absolute !important;
       top: 50%;
       left: 50%;
-      -webkit-transform: translate(-50%, -50%);
-      -moz-transform: translate(-50%, -50%);
-      -ms-transform: translate(-50%, -50%);
-      transform: translate(-50%, -50%); }
+      -webkit-transform: translate(-50%, -50%) !important;
+      -moz-transform: translate(-50%, -50%) !important;
+      -ms-transform: translate(-50%, -50%) !important;
+      transform: translate(-50%, -50%) !important; }
       .top_nav .top_nav_center .btn_navi {
         -webkit-transition: all 0.3s;
         -moz-transition: all 0.3s;
@@ -513,10 +513,10 @@ b {
       position: absolute !important;
       top: 56%;
       left: 50%;
-      -webkit-transform: translate(-50%, -50%);
-      -moz-transform: translate(-50%, -50%);
-      -ms-transform: translate(-50%, -50%);
-      transform: translate(-50%, -50%);
+      -webkit-transform: translate(-50%, -50%) !important;
+      -moz-transform: translate(-50%, -50%) !important;
+      -ms-transform: translate(-50%, -50%) !important;
+      transform: translate(-50%, -50%) !important;
       width: 100vw;
       height: 400px; }
       .container01 .content_wrap .subTitle01_wrap {
@@ -546,19 +546,19 @@ b {
         height: 6px;
         position: relative !important;
         left: 50%;
-        -webkit-transform: translate(-50%, -50%);
-        -moz-transform: translate(-50%, -50%);
-        -ms-transform: translate(-50%, -50%);
-        transform: translate(-50%, -50%);
+        -webkit-transform: translate(-50%, -50%) !important;
+        -moz-transform: translate(-50%, -50%) !important;
+        -ms-transform: translate(-50%, -50%) !important;
+        transform: translate(-50%, -50%) !important;
         border-radius: 4px;
         background: #67AFC2; }
       .container01 .content_wrap .title01_wrap {
         position: relative !important;
         left: 50%;
-        -webkit-transform: translate(-50%, -50%);
-        -moz-transform: translate(-50%, -50%);
-        -ms-transform: translate(-50%, -50%);
-        transform: translate(-50%, -50%);
+        -webkit-transform: translate(-50%, -50%) !important;
+        -moz-transform: translate(-50%, -50%) !important;
+        -ms-transform: translate(-50%, -50%) !important;
+        transform: translate(-50%, -50%) !important;
         text-align: center;
         margin-top: 40px;
         display: inline-block; }
@@ -580,10 +580,10 @@ b {
         position: relative !important;
         top: 12%;
         left: 50%;
-        -webkit-transform: translate(-50%, -50%);
-        -moz-transform: translate(-50%, -50%);
-        -ms-transform: translate(-50%, -50%);
-        transform: translate(-50%, -50%);
+        -webkit-transform: translate(-50%, -50%) !important;
+        -moz-transform: translate(-50%, -50%) !important;
+        -ms-transform: translate(-50%, -50%) !important;
+        transform: translate(-50%, -50%) !important;
         width: 300px;
         text-align: center; }
         .container01 .content_wrap .mainDecription01_wrap .mainDecription_01 {
@@ -604,10 +604,10 @@ b {
         position: absolute !important;
         bottom: 8%;
         left: 50%;
-        -webkit-transform: translate(-50%, -50%);
-        -moz-transform: translate(-50%, -50%);
-        -ms-transform: translate(-50%, -50%);
-        transform: translate(-50%, -50%); }
+        -webkit-transform: translate(-50%, -50%) !important;
+        -moz-transform: translate(-50%, -50%) !important;
+        -ms-transform: translate(-50%, -50%) !important;
+        transform: translate(-50%, -50%) !important; }
         .container01 .content_wrap .container_01_btn .btn_docs {
           width: 240px;
           height: 48px;
@@ -669,10 +669,10 @@ b {
       position: absolute !important;
       top: 50%;
       left: 50%;
-      -webkit-transform: translate(-50%, -50%);
-      -moz-transform: translate(-50%, -50%);
-      -ms-transform: translate(-50%, -50%);
-      transform: translate(-50%, -50%);
+      -webkit-transform: translate(-50%, -50%) !important;
+      -moz-transform: translate(-50%, -50%) !important;
+      -ms-transform: translate(-50%, -50%) !important;
+      transform: translate(-50%, -50%) !important;
       width: 100vw;
       height: 300px;
       margin-top: 32px; }
@@ -703,19 +703,19 @@ b {
         height: 6px;
         position: relative !important;
         left: 50%;
-        -webkit-transform: translate(-50%, -50%);
-        -moz-transform: translate(-50%, -50%);
-        -ms-transform: translate(-50%, -50%);
-        transform: translate(-50%, -50%);
+        -webkit-transform: translate(-50%, -50%) !important;
+        -moz-transform: translate(-50%, -50%) !important;
+        -ms-transform: translate(-50%, -50%) !important;
+        transform: translate(-50%, -50%) !important;
         border-radius: 4px;
         background: #67AFC2; }
       .container01 .content_wrap .title01_wrap {
         position: relative !important;
         left: 50%;
-        -webkit-transform: translate(-50%, -50%);
-        -moz-transform: translate(-50%, -50%);
-        -ms-transform: translate(-50%, -50%);
-        transform: translate(-50%, -50%);
+        -webkit-transform: translate(-50%, -50%) !important;
+        -moz-transform: translate(-50%, -50%) !important;
+        -ms-transform: translate(-50%, -50%) !important;
+        transform: translate(-50%, -50%) !important;
         text-align: center;
         margin-top: 24px;
         display: inline-block; }
@@ -737,10 +737,10 @@ b {
         position: relative !important;
         top: 8%;
         left: 50%;
-        -webkit-transform: translate(-50%, -50%);
-        -moz-transform: translate(-50%, -50%);
-        -ms-transform: translate(-50%, -50%);
-        transform: translate(-50%, -50%);
+        -webkit-transform: translate(-50%, -50%) !important;
+        -moz-transform: translate(-50%, -50%) !important;
+        -ms-transform: translate(-50%, -50%) !important;
+        transform: translate(-50%, -50%) !important;
         width: 310px;
         text-align: center; }
         .container01 .content_wrap .mainDecription01_wrap .mainDecription_01 {
@@ -761,10 +761,10 @@ b {
         position: absolute !important;
         bottom: 12%;
         left: 50%;
-        -webkit-transform: translate(-50%, -50%);
-        -moz-transform: translate(-50%, -50%);
-        -ms-transform: translate(-50%, -50%);
-        transform: translate(-50%, -50%); }
+        -webkit-transform: translate(-50%, -50%) !important;
+        -moz-transform: translate(-50%, -50%) !important;
+        -ms-transform: translate(-50%, -50%) !important;
+        transform: translate(-50%, -50%) !important; }
         .container01 .content_wrap .container_01_btn .btn_docs {
           width: 200px;
           height: 40px;
@@ -826,10 +826,10 @@ b {
       position: absolute !important;
       top: 54%;
       left: 50%;
-      -webkit-transform: translate(-50%, -50%);
-      -moz-transform: translate(-50%, -50%);
-      -ms-transform: translate(-50%, -50%);
-      transform: translate(-50%, -50%);
+      -webkit-transform: translate(-50%, -50%) !important;
+      -moz-transform: translate(-50%, -50%) !important;
+      -ms-transform: translate(-50%, -50%) !important;
+      transform: translate(-50%, -50%) !important;
       width: 100vw;
       height: 400px; }
       .container01 .content_wrap .subTitle01_wrap {
@@ -860,19 +860,19 @@ b {
         position: relative !important;
         top: 8px;
         left: 50%;
-        -webkit-transform: translate(-50%, -50%);
-        -moz-transform: translate(-50%, -50%);
-        -ms-transform: translate(-50%, -50%);
-        transform: translate(-50%, -50%);
+        -webkit-transform: translate(-50%, -50%) !important;
+        -moz-transform: translate(-50%, -50%) !important;
+        -ms-transform: translate(-50%, -50%) !important;
+        transform: translate(-50%, -50%) !important;
         border-radius: 4px;
         background: #67AFC2; }
       .container01 .content_wrap .title01_wrap {
         position: relative !important;
         left: 50%;
-        -webkit-transform: translate(-50%, -50%);
-        -moz-transform: translate(-50%, -50%);
-        -ms-transform: translate(-50%, -50%);
-        transform: translate(-50%, -50%);
+        -webkit-transform: translate(-50%, -50%) !important;
+        -moz-transform: translate(-50%, -50%) !important;
+        -ms-transform: translate(-50%, -50%) !important;
+        transform: translate(-50%, -50%) !important;
         text-align: center;
         margin-top: 64px;
         display: inline-block; }
@@ -910,10 +910,10 @@ b {
         position: absolute !important;
         bottom: -6%;
         left: 50%;
-        -webkit-transform: translate(-50%, -50%);
-        -moz-transform: translate(-50%, -50%);
-        -ms-transform: translate(-50%, -50%);
-        transform: translate(-50%, -50%); }
+        -webkit-transform: translate(-50%, -50%) !important;
+        -moz-transform: translate(-50%, -50%) !important;
+        -ms-transform: translate(-50%, -50%) !important;
+        transform: translate(-50%, -50%) !important; }
         .container01 .content_wrap .container_01_btn .btn_docs {
           width: 240px;
           height: 64px;
@@ -1072,10 +1072,10 @@ b {
       position: absolute !important;
       top: 50%;
       left: 50%;
-      -webkit-transform: translate(-50%, -50%);
-      -moz-transform: translate(-50%, -50%);
-      -ms-transform: translate(-50%, -50%);
-      transform: translate(-50%, -50%);
+      -webkit-transform: translate(-50%, -50%) !important;
+      -moz-transform: translate(-50%, -50%) !important;
+      -ms-transform: translate(-50%, -50%) !important;
+      transform: translate(-50%, -50%) !important;
       width: 100vw;
       height: 480px; }
       .container02 .content_wrap .title_02_wrap {
@@ -1106,10 +1106,10 @@ b {
         position: relative !important;
         top: 24px;
         left: 50%;
-        -webkit-transform: translate(-50%, -50%);
-        -moz-transform: translate(-50%, -50%);
-        -ms-transform: translate(-50%, -50%);
-        transform: translate(-50%, -50%);
+        -webkit-transform: translate(-50%, -50%) !important;
+        -moz-transform: translate(-50%, -50%) !important;
+        -ms-transform: translate(-50%, -50%) !important;
+        transform: translate(-50%, -50%) !important;
         border-radius: 8px;
         background: #67AFC2; }
       .container02 .content_wrap .desc_02_wrap {
@@ -1118,10 +1118,10 @@ b {
         position: relative !important;
         top: 24%;
         left: 50%;
-        -webkit-transform: translate(-50%, -50%);
-        -moz-transform: translate(-50%, -50%);
-        -ms-transform: translate(-50%, -50%);
-        transform: translate(-50%, -50%);
+        -webkit-transform: translate(-50%, -50%) !important;
+        -moz-transform: translate(-50%, -50%) !important;
+        -ms-transform: translate(-50%, -50%) !important;
+        transform: translate(-50%, -50%) !important;
         text-align: center; }
         .container02 .content_wrap .desc_02_wrap .text {
           -webkit-touch-callout: none;
@@ -1154,10 +1154,10 @@ b {
       position: absolute !important;
       top: 50%;
       left: 50%;
-      -webkit-transform: translate(-50%, -50%);
-      -moz-transform: translate(-50%, -50%);
-      -ms-transform: translate(-50%, -50%);
-      transform: translate(-50%, -50%);
+      -webkit-transform: translate(-50%, -50%) !important;
+      -moz-transform: translate(-50%, -50%) !important;
+      -ms-transform: translate(-50%, -50%) !important;
+      transform: translate(-50%, -50%) !important;
       width: 100vw;
       height: 640px; }
       .container02 .content_wrap .title_02_wrap {
@@ -1188,10 +1188,10 @@ b {
         position: relative !important;
         top: 24px;
         left: 50%;
-        -webkit-transform: translate(-50%, -50%);
-        -moz-transform: translate(-50%, -50%);
-        -ms-transform: translate(-50%, -50%);
-        transform: translate(-50%, -50%);
+        -webkit-transform: translate(-50%, -50%) !important;
+        -moz-transform: translate(-50%, -50%) !important;
+        -ms-transform: translate(-50%, -50%) !important;
+        transform: translate(-50%, -50%) !important;
         border-radius: 8px;
         background: #67AFC2; }
       .container02 .content_wrap .desc_02_wrap {
@@ -1199,10 +1199,10 @@ b {
         position: relative !important;
         top: 24%;
         left: 50%;
-        -webkit-transform: translate(-50%, -50%);
-        -moz-transform: translate(-50%, -50%);
-        -ms-transform: translate(-50%, -50%);
-        transform: translate(-50%, -50%);
+        -webkit-transform: translate(-50%, -50%) !important;
+        -moz-transform: translate(-50%, -50%) !important;
+        -ms-transform: translate(-50%, -50%) !important;
+        transform: translate(-50%, -50%) !important;
         text-align: center;
         margin-top: 32px; }
         .container02 .content_wrap .desc_02_wrap .text {
@@ -1236,10 +1236,10 @@ b {
       position: absolute !important;
       top: 50%;
       left: 50%;
-      -webkit-transform: translate(-50%, -50%);
-      -moz-transform: translate(-50%, -50%);
-      -ms-transform: translate(-50%, -50%);
-      transform: translate(-50%, -50%);
+      -webkit-transform: translate(-50%, -50%) !important;
+      -moz-transform: translate(-50%, -50%) !important;
+      -ms-transform: translate(-50%, -50%) !important;
+      transform: translate(-50%, -50%) !important;
       width: 100vw;
       height: 1024px; }
       .container02 .content_wrap .title_02_wrap {
@@ -1271,10 +1271,10 @@ b {
         position: relative !important;
         top: 24px;
         left: 50%;
-        -webkit-transform: translate(-50%, -50%);
-        -moz-transform: translate(-50%, -50%);
-        -ms-transform: translate(-50%, -50%);
-        transform: translate(-50%, -50%);
+        -webkit-transform: translate(-50%, -50%) !important;
+        -moz-transform: translate(-50%, -50%) !important;
+        -ms-transform: translate(-50%, -50%) !important;
+        transform: translate(-50%, -50%) !important;
         border-radius: 8px;
         background: #67AFC2; }
       .container02 .content_wrap .desc_02_wrap {
@@ -1298,10 +1298,10 @@ b {
         position: absolute !important;
         top: 75%;
         left: 50%;
-        -webkit-transform: translate(-50%, -50%);
-        -moz-transform: translate(-50%, -50%);
-        -ms-transform: translate(-50%, -50%);
-        transform: translate(-50%, -50%); }
+        -webkit-transform: translate3d(-50%, -50%, 0) !important;
+        -moz-transform: translate3d(-50%, -50%, 0) !important;
+        -ms-transform: translate3d(-50%, -50%, 0) !important;
+        transform: translate3d(-50%, -50%, 0) !important; }
         .container02 .content_wrap .container_02_imgs .shapes {
           position: absolute !important;
           top: 188px;
@@ -1639,10 +1639,10 @@ b {
       position: absolute !important;
       top: 50%;
       left: 50%;
-      -webkit-transform: translate(-50%, -50%);
-      -moz-transform: translate(-50%, -50%);
-      -ms-transform: translate(-50%, -50%);
-      transform: translate(-50%, -50%);
+      -webkit-transform: translate(-50%, -50%) !important;
+      -moz-transform: translate(-50%, -50%) !important;
+      -ms-transform: translate(-50%, -50%) !important;
+      transform: translate(-50%, -50%) !important;
       width: 100vw;
       height: 680px; }
       .container03 .content_wrap .title_03_wrap {
@@ -1673,10 +1673,10 @@ b {
         position: relative !important;
         top: 24px;
         left: 50%;
-        -webkit-transform: translate(-50%, -50%);
-        -moz-transform: translate(-50%, -50%);
-        -ms-transform: translate(-50%, -50%);
-        transform: translate(-50%, -50%);
+        -webkit-transform: translate(-50%, -50%) !important;
+        -moz-transform: translate(-50%, -50%) !important;
+        -ms-transform: translate(-50%, -50%) !important;
+        transform: translate(-50%, -50%) !important;
         border-radius: 8px;
         background: #67AFC2; }
       .container03 .content_wrap .desc_03_wrap {
@@ -1710,10 +1710,10 @@ b {
           position: relative !important;
           top: 8px;
           left: 50%;
-          -webkit-transform: translate(-50%, -50%);
-          -moz-transform: translate(-50%, -50%);
-          -ms-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+          -webkit-transform: translate(-50%, -50%) !important;
+          -moz-transform: translate(-50%, -50%) !important;
+          -ms-transform: translate(-50%, -50%) !important;
+          transform: translate(-50%, -50%) !important;
           text-align: center;
           border-radius: 2px;
           background: linear-gradient(90deg, #02224c, #0c7775); }
@@ -1729,10 +1729,10 @@ b {
           position: relative !important;
           top: 50%;
           left: 50%;
-          -webkit-transform: translate(-50%, -50%);
-          -moz-transform: translate(-50%, -50%);
-          -ms-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+          -webkit-transform: translate(-50%, -50%) !important;
+          -moz-transform: translate(-50%, -50%) !important;
+          -ms-transform: translate(-50%, -50%) !important;
+          transform: translate(-50%, -50%) !important;
           margin-top: 56px; }
           .container03 .content_wrap .desc_03_wrap .desc_info span {
             color: #b4b4b4;
@@ -1746,10 +1746,10 @@ b {
         position: absolute !important;
         top: 80%;
         left: 50%;
-        -webkit-transform: translate(-50%, -50%);
-        -moz-transform: translate(-50%, -50%);
-        -ms-transform: translate(-50%, -50%);
-        transform: translate(-50%, -50%); }
+        -webkit-transform: translate(-50%, -50%) !important;
+        -moz-transform: translate(-50%, -50%) !important;
+        -ms-transform: translate(-50%, -50%) !important;
+        transform: translate(-50%, -50%) !important; }
         .container03 .content_wrap .img_wrap #main_img {
           max-width: 300px; } }
 
@@ -1767,10 +1767,10 @@ b {
       position: absolute !important;
       top: 50%;
       left: 50%;
-      -webkit-transform: translate(-50%, -50%);
-      -moz-transform: translate(-50%, -50%);
-      -ms-transform: translate(-50%, -50%);
-      transform: translate(-50%, -50%);
+      -webkit-transform: translate(-50%, -50%) !important;
+      -moz-transform: translate(-50%, -50%) !important;
+      -ms-transform: translate(-50%, -50%) !important;
+      transform: translate(-50%, -50%) !important;
       min-height: 480px; }
       .container03 .content_wrap .title_03_wrap {
         text-align: center; }
@@ -1800,10 +1800,10 @@ b {
         position: relative !important;
         top: 24px;
         left: 50%;
-        -webkit-transform: translate(-50%, -50%);
-        -moz-transform: translate(-50%, -50%);
-        -ms-transform: translate(-50%, -50%);
-        transform: translate(-50%, -50%);
+        -webkit-transform: translate(-50%, -50%) !important;
+        -moz-transform: translate(-50%, -50%) !important;
+        -ms-transform: translate(-50%, -50%) !important;
+        transform: translate(-50%, -50%) !important;
         border-radius: 8px;
         background: #67AFC2; }
       .container03 .content_wrap .desc_03_wrap {
@@ -1837,10 +1837,10 @@ b {
           position: relative !important;
           top: 8px;
           left: 50%;
-          -webkit-transform: translate(-50%, -50%);
-          -moz-transform: translate(-50%, -50%);
-          -ms-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+          -webkit-transform: translate(-50%, -50%) !important;
+          -moz-transform: translate(-50%, -50%) !important;
+          -ms-transform: translate(-50%, -50%) !important;
+          transform: translate(-50%, -50%) !important;
           text-align: center;
           border-radius: 2px;
           background: linear-gradient(90deg, #02224c, #0c7775); }
@@ -1856,10 +1856,10 @@ b {
           position: relative !important;
           top: 50%;
           left: 50%;
-          -webkit-transform: translate(-50%, -50%);
-          -moz-transform: translate(-50%, -50%);
-          -ms-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+          -webkit-transform: translate(-50%, -50%) !important;
+          -moz-transform: translate(-50%, -50%) !important;
+          -ms-transform: translate(-50%, -50%) !important;
+          transform: translate(-50%, -50%) !important;
           margin-top: 56px; }
           .container03 .content_wrap .desc_03_wrap .desc_info span {
             color: #b4b4b4;
@@ -1873,10 +1873,10 @@ b {
         position: relative !important;
         top: 50%;
         left: 50%;
-        -webkit-transform: translate(-50%, -50%);
-        -moz-transform: translate(-50%, -50%);
-        -ms-transform: translate(-50%, -50%);
-        transform: translate(-50%, -50%);
+        -webkit-transform: translate(-50%, -50%) !important;
+        -moz-transform: translate(-50%, -50%) !important;
+        -ms-transform: translate(-50%, -50%) !important;
+        transform: translate(-50%, -50%) !important;
         margin-top: 240px; }
         .container03 .content_wrap .img_wrap #main_img {
           width: 560px; } }
@@ -1895,10 +1895,10 @@ b {
       position: absolute !important;
       top: 52%;
       left: 50%;
-      -webkit-transform: translate(-50%, -50%);
-      -moz-transform: translate(-50%, -50%);
-      -ms-transform: translate(-50%, -50%);
-      transform: translate(-50%, -50%);
+      -webkit-transform: translate(-50%, -50%) !important;
+      -moz-transform: translate(-50%, -50%) !important;
+      -ms-transform: translate(-50%, -50%) !important;
+      transform: translate(-50%, -50%) !important;
       width: 100vw;
       height: 1180px; }
       .container03 .content_wrap .title_03_wrap {
@@ -1929,10 +1929,10 @@ b {
         position: relative !important;
         top: 16px;
         left: 50%;
-        -webkit-transform: translate(-50%, -50%);
-        -moz-transform: translate(-50%, -50%);
-        -ms-transform: translate(-50%, -50%);
-        transform: translate(-50%, -50%);
+        -webkit-transform: translate(-50%, -50%) !important;
+        -moz-transform: translate(-50%, -50%) !important;
+        -ms-transform: translate(-50%, -50%) !important;
+        transform: translate(-50%, -50%) !important;
         border-radius: 8px;
         background: #67AFC2; }
       .container03 .content_wrap .desc_03_wrap {
@@ -1966,10 +1966,10 @@ b {
           position: relative !important;
           top: 8px;
           left: 50%;
-          -webkit-transform: translate(-50%, -50%);
-          -moz-transform: translate(-50%, -50%);
-          -ms-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+          -webkit-transform: translate(-50%, -50%) !important;
+          -moz-transform: translate(-50%, -50%) !important;
+          -ms-transform: translate(-50%, -50%) !important;
+          transform: translate(-50%, -50%) !important;
           text-align: center;
           border-radius: 2px;
           background: linear-gradient(90deg, #02224c, #0c7775); }
@@ -1993,10 +1993,10 @@ b {
         position: absolute !important;
         top: 72%;
         left: 50%;
-        -webkit-transform: translate(-50%, -50%);
-        -moz-transform: translate(-50%, -50%);
-        -ms-transform: translate(-50%, -50%);
-        transform: translate(-50%, -50%); }
+        -webkit-transform: translate(-50%, -50%) !important;
+        -moz-transform: translate(-50%, -50%) !important;
+        -ms-transform: translate(-50%, -50%) !important;
+        transform: translate(-50%, -50%) !important; }
         .container03 .content_wrap .img_wrap #main_img {
           max-width: 920px; } }
 
@@ -2112,10 +2112,10 @@ b {
       position: absolute !important;
       top: 48%;
       left: 50%;
-      -webkit-transform: translate(-50%, -50%);
-      -moz-transform: translate(-50%, -50%);
-      -ms-transform: translate(-50%, -50%);
-      transform: translate(-50%, -50%);
+      -webkit-transform: translate(-50%, -50%) !important;
+      -moz-transform: translate(-50%, -50%) !important;
+      -ms-transform: translate(-50%, -50%) !important;
+      transform: translate(-50%, -50%) !important;
       width: 300px;
       height: 560px; }
       .container04 .content_wrap .title_04_wrap {
@@ -2178,10 +2178,10 @@ b {
           position: absolute !important;
           top: 43%;
           left: 50%;
-          -webkit-transform: translate(-50%, -50%);
-          -moz-transform: translate(-50%, -50%);
-          -ms-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+          -webkit-transform: translate(-50%, -50%) !important;
+          -moz-transform: translate(-50%, -50%) !important;
+          -ms-transform: translate(-50%, -50%) !important;
+          transform: translate(-50%, -50%) !important;
           border-radius: 8px;
           background: #b4b4b4; }
         .container04 .content_wrap .desc_04_wrap .desc_info {
@@ -2233,10 +2233,10 @@ b {
       position: absolute !important;
       top: 48%;
       left: 50%;
-      -webkit-transform: translate(-50%, -50%);
-      -moz-transform: translate(-50%, -50%);
-      -ms-transform: translate(-50%, -50%);
-      transform: translate(-50%, -50%);
+      -webkit-transform: translate(-50%, -50%) !important;
+      -moz-transform: translate(-50%, -50%) !important;
+      -ms-transform: translate(-50%, -50%) !important;
+      transform: translate(-50%, -50%) !important;
       width: 440px;
       height: 640px; }
       .container04 .content_wrap .title_04_wrap {
@@ -2268,10 +2268,10 @@ b {
         position: absolute !important;
         top: 25%;
         left: 50%;
-        -webkit-transform: translate(-50%, -50%);
-        -moz-transform: translate(-50%, -50%);
-        -ms-transform: translate(-50%, -50%);
-        transform: translate(-50%, -50%);
+        -webkit-transform: translate(-50%, -50%) !important;
+        -moz-transform: translate(-50%, -50%) !important;
+        -ms-transform: translate(-50%, -50%) !important;
+        transform: translate(-50%, -50%) !important;
         border-radius: 8px;
         background: linear-gradient(90deg, #67AFC2, #68839F); }
       .container04 .content_wrap .desc_04_wrap {
@@ -2303,10 +2303,10 @@ b {
           position: absolute !important;
           top: 37%;
           left: 50%;
-          -webkit-transform: translate(-50%, -50%);
-          -moz-transform: translate(-50%, -50%);
-          -ms-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+          -webkit-transform: translate(-50%, -50%) !important;
+          -moz-transform: translate(-50%, -50%) !important;
+          -ms-transform: translate(-50%, -50%) !important;
+          transform: translate(-50%, -50%) !important;
           border-radius: 8px;
           background: #b4b4b4; }
         .container04 .content_wrap .desc_04_wrap .desc_info {
@@ -2330,10 +2330,10 @@ b {
         position: relative !important;
         top: 24%;
         left: 50%;
-        -webkit-transform: translate(-42%, -50%);
-        -moz-transform: translate(-42%, -50%);
-        -ms-transform: translate(-42%, -50%);
-        transform: translate(-42%, -50%); }
+        -webkit-transform: translate(-42%, -50%) !important;
+        -moz-transform: translate(-42%, -50%) !important;
+        -ms-transform: translate(-42%, -50%) !important;
+        transform: translate(-42%, -50%) !important; }
         .container04 .content_wrap .img_04_wrap .img_furnish {
           -webkit-touch-callout: none;
           -webkit-user-select: none;
@@ -2362,10 +2362,10 @@ b {
       position: absolute !important;
       top: 44%;
       left: 50%;
-      -webkit-transform: translate(-50%, -50%);
-      -moz-transform: translate(-50%, -50%);
-      -ms-transform: translate(-50%, -50%);
-      transform: translate(-50%, -50%);
+      -webkit-transform: translate(-50%, -50%) !important;
+      -moz-transform: translate(-50%, -50%) !important;
+      -ms-transform: translate(-50%, -50%) !important;
+      transform: translate(-50%, -50%) !important;
       width: 980px;
       height: 440px; }
       .container04 .content_wrap .title_04_wrap {
@@ -2580,10 +2580,10 @@ b {
       position: absolute !important;
       top: 50%;
       right: 24px;
-      -webkit-transform: translate(0%, -50%);
-      -moz-transform: translate(0%, -50%);
-      -ms-transform: translate(0%, -50%);
-      transform: translate(0%, -50%); }
+      -webkit-transform: translate(0%, -50%) !important;
+      -moz-transform: translate(0%, -50%) !important;
+      -ms-transform: translate(0%, -50%) !important;
+      transform: translate(0%, -50%) !important; }
       .bottom_nav .bottom_sign .sing_info {
         color: #fff;
         font-size: 12px;
@@ -2596,10 +2596,10 @@ b {
       position: absolute !important;
       top: 50%;
       left: 50%;
-      -webkit-transform: translate(-50%, -50%);
-      -moz-transform: translate(-50%, -50%);
-      -ms-transform: translate(-50%, -50%);
-      transform: translate(-50%, -50%); }
+      -webkit-transform: translate(-50%, -50%) !important;
+      -moz-transform: translate(-50%, -50%) !important;
+      -ms-transform: translate(-50%, -50%) !important;
+      transform: translate(-50%, -50%) !important; }
       .bottom_nav .bottom_logo .img_logo {
         width: 30px;
         height: 24px; }
@@ -2607,10 +2607,10 @@ b {
       position: absolute !important;
       top: 50%;
       left: 24px;
-      -webkit-transform: translate(0%, -50%);
-      -moz-transform: translate(0%, -50%);
-      -ms-transform: translate(0%, -50%);
-      transform: translate(0%, -50%); }
+      -webkit-transform: translate(0%, -50%) !important;
+      -moz-transform: translate(0%, -50%) !important;
+      -ms-transform: translate(0%, -50%) !important;
+      transform: translate(0%, -50%) !important; }
       .bottom_nav .bottom_buttons .bottom_button {
         color: #fff;
         font-size: 12px;

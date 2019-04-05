@@ -1,8 +1,8 @@
-TweenMax.to('.line_01', 2, { backgroundColor: '#6774C1', ease: Sine.easeInOut, yoyo: true, repeat: -1 });
-TweenMax.to('.line_02', 1, { backgroundColor: '#3b4856', ease: Sine.easeInOut, yoyo: true, repeat: -1 });
-TweenMax.to('.line_03', 1, { backgroundColor: '#3b4856', ease: Sine.easeInOut, yoyo: true, repeat: -1 });
+TweenLite.to('.line_01', 2, { backgroundColor: '#6774C1', ease: Sine.easeInOut, yoyo: true, repeat: -1 });
+TweenLite.to('.line_02', 1, { backgroundColor: '#3b4856', ease: Sine.easeInOut, yoyo: true, repeat: -1 });
+TweenLite.to('.line_03', 1, { backgroundColor: '#3b4856', ease: Sine.easeInOut, yoyo: true, repeat: -1 });
 
-$(document).ready(()=>{
+// $(document).ready(()=>{
 
   // Init ScrollMagic
   var controller = new ScrollMagic.Controller();
@@ -16,12 +16,12 @@ $(document).ready(()=>{
 	.setPin('#container01', {pushFollowers: false})
   .addTo(controller);
   
-  // pin again
+  //pin again
 	var pinIntroScene2 = new ScrollMagic.Scene({
 		triggerElement: '#container02',
 		triggerHook: 0.6
 	})
-	.setPin('#container01', {pushFollowers: false})
+	.setPin('#container01')
 	.addTo(controller);
 
 
@@ -41,9 +41,9 @@ $(document).ready(()=>{
   .addTo(controller);
   
   // build a scene_02
-  var tl = new TimelineMax();
-  tl.from('#desc_02_wrap', 24, {ease: Power2.easeOut, y: 200, opacity: 0});
-  tl.from('#container_02_imgs', 16, {ease: Power2.easeOut, y: -200, opacity: 0});
+  var tl = new TimelineLite()
+    tl.from('#desc_02_wrap', 24, {ease: Power2.easeOut, y: 200, opacity: 0}),
+    tl.from('#container_02_imgs', 24, {ease: Power2.easeOut, y: -240, opacity: 0})
 
   var ourScene = new ScrollMagic.Scene({
     triggerElement: '#container02',
@@ -56,9 +56,10 @@ $(document).ready(()=>{
   .addTo(controller);
 
   // build a scene_03
-  var tl2 = new TimelineMax();
-  tl2.from('.desc_03_wrap', 24, {ease: Power2.easeOut, y:200, opacity: 0},"=-11");
-  tl2.from('#main_img', 24, {y:400, opacity: 0}, "=-11");
+  var tl2 = new TimelineLite()
+    tl2.from('.desc_03_wrap', 24, {ease: Power2.easeOut, y:200, opacity: 0},"=-11"),
+    tl2.from('#main_img', 24, {y:400, opacity: 0}, "=-11")
+
 
   var ourScene = new ScrollMagic.Scene({
     triggerElement: '#container03',
@@ -71,8 +72,9 @@ $(document).ready(()=>{
   .addTo(controller);
 
   // build a scene_04
-  var tl3 = new TimelineMax();
-  tl3.from('#img_furnish', 8, {x:-320, opacity: 0});
+  var tl3 = new TimelineLite()
+    tl3.from('#img_furnish', 8, {x:-320, opacity: 0})
+
 
   var ourScene = new ScrollMagic.Scene({
     triggerElement: '#container04',
@@ -83,4 +85,7 @@ $(document).ready(()=>{
   .setPin("#container_04")
   .addTo(controller);
 
-});
+  var wrapper = document.getElementById('#wrap_container');
+
+  console.log(wrapper);
+// });

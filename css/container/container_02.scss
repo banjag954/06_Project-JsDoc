@@ -191,7 +191,7 @@
 
             .container_02_imgs {
                 @include position(absolute, 75%, null, null, 50%);
-                @include transform(translate(-50%, -50%));
+                @include transform(translate3d(-50%, -50%, 0));
 
                 .shapes {
                     @include position(absolute, 188px, null, null, 288px);
