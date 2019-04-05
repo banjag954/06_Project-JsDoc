@@ -42,8 +42,8 @@ $(document).ready(()=>{
   
   // build a scene_02
   var tl = new TimelineMax();
-  tl.from('#desc_02_wrap', 8, {ease: Power2.easeOut, y: 400, opacity: 0});
-  tl.from('#container_02_imgs', 2, {ease: Power2.easeOut, y: -200, opacity: 0});
+  tl.from('#desc_02_wrap', 24, {ease: Power2.easeOut, y: 400, opacity: 0});
+  tl.from('#container_02_imgs', 24, {ease: Power2.easeOut, y: -200, opacity: 0});
 
   var ourScene = new ScrollMagic.Scene({
     triggerElement: '#container02',
