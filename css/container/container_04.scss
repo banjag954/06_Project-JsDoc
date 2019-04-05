@@ -1,0 +1,287 @@
+// Modules and Variables
+@import './base/_mixins',
+        './base/_color',
+        './base/_typography';
+
+// Partials
+@import './partials/_keyframe';
+
+@media only screen and (max-width: 480px) {
+
+    .container04 {
+        @include position(relative, null, null, null, null);
+        @include transition(transition, all 1s ease-out);
+        overflow: hidden;
+        height:100vh;
+        opacity: 1;
+
+        .content_wrap {
+            @include position(absolute, 48%, null, null, 50%);
+            @include transform(translate(-50%, -50%));
+            @include size(300px, 560px);
+
+            .title_04_wrap {
+                margin-top:24px;
+                text-align: center;
+        
+                .title_04 {
+                    @include no-select;
+                    color: #fff;
+                    font-size: 30px;
+                    font-family: 'Noto Sans KR', sans-serif;
+                    font-weight: 800;
+                    text-transform: uppercase;
+                    line-height: 40px;
+                    letter-spacing: -0.5px;
+                }
+            }
+
+            .line_04 {
+                @include no-select;
+                @include size(280px, 8px);
+                @include position(absolute, 152px, 8px, null, null);
+                border-radius: 8px;
+                background:linear-gradient(90deg, #67AFC2 ,#68839F);
+            }
+
+            .desc_04_wrap {
+                @include no-select;
+                margin:24px 8px;
+                text-align: center;
+
+                .desc_title {
+                    color: #b4b4b4;
+                    font-size: 14px;
+                    font-family: 'Noto Sans KR', sans-serif;
+                    font-weight: 300;
+                    text-transform: none;
+                    line-height: 20px;
+                    letter-spacing: -0.4px;
+                }
+
+                .desc_line {
+                    @include no-select;
+                    @include size(240px, 2px);
+                    @include position(absolute, 43%, null, null, 50%);
+                    @include transform(translate(-50%, -50%));
+                    border-radius: 8px;
+                    background:#b4b4b4;
+                }
+
+                .desc_info {
+                    margin:24px 8px 8px;
+                    text-align: center;
+
+                    span {
+                        @include no-select;
+                        color: status(caution);
+                        font-size: 11px;
+                        font-family: 'Noto Sans KR', sans-serif;
+                        font-weight: 300;
+                        text-transform: none;
+                        line-height: 18px;
+                        letter-spacing: 0.1px;
+                    }
+                }
+            }
+
+            .img_04_wrap {
+                @include position(absolute, 310px, null, null, -24%);
+                .img_furnish{
+                    @include no-select;
+                    @include size(370px, 294px);
+                    @include box-shadow(0, 4px, 32px, #1641482c);
+                    border-radius: 0px 8px 8px 0px;
+                }
+            
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 481px) and (max-width: 1023px) {
+
+    .container04 {
+        @include position(relative, null, null, null, null);
+        @include transition(transition, all 1s ease-out);
+        overflow: hidden;
+        height:680px;
+        opacity: 1;
+
+        .content_wrap {
+            @include position(absolute, 48%, null, null, 50%);
+            @include transform(translate(-50%, -50%));
+            @include size(440px, 640px);
+
+            .title_04_wrap {
+                margin-top:24px;
+                text-align: center;
+        
+                .title_04 {
+                    @include no-select;
+                    color: #fff;
+                    font-size: 30px;
+                    font-family: 'Noto Sans KR', sans-serif;
+                    font-weight: 800;
+                    text-transform: uppercase;
+                    line-height: 40px;
+                    letter-spacing: -0.5px;
+                }
+            }
+
+            .line_04 {
+                @include no-select;
+                @include size(400px, 8px);
+                @include position(absolute, 25%, null, null, 50%);
+                @include transform(translate(-50%, -50%));
+                border-radius: 8px;
+                background:linear-gradient(90deg, #67AFC2 ,#68839F);
+            }
+
+            .desc_04_wrap {
+                @include no-select;
+                margin:40px 8px;
+                text-align: center;
+
+                .desc_title {
+                    color: #b4b4b4;
+                    font-size: 14px;
+                    font-family: 'Noto Sans KR', sans-serif;
+                    font-weight: 300;
+                    text-transform: none;
+                    line-height: 20px;
+                    letter-spacing: -0.4px;
+                }
+
+                .desc_line {
+                    @include no-select;
+                    @include size(320px, 2px);
+                    @include position(absolute, 37%, null, null, 50%);
+                    @include transform(translate(-50%, -50%));
+                    border-radius: 8px;
+                    background:#b4b4b4;
+                }
+
+                .desc_info {
+                    margin:24px 8px 8px;
+                    text-align: center;
+
+                    span {
+                        @include no-select;
+                        color: status(caution);
+                        font-size: 11px;
+                        font-family: 'Noto Sans KR', sans-serif;
+                        font-weight: 300;
+                        text-transform: none;
+                        line-height: 18px;
+                        letter-spacing: 0.1px;
+                    }
+                }
+            }
+
+            .img_04_wrap {
+                @include position(relative, 24%, null, null, 50%);
+                @include transform(translate(-42%, -50%));
+                .img_furnish{
+                    @include no-select;
+                    @include size(370px, 294px);
+                    @include box-shadow(0, 4px, 32px, #1641482c);
+                    border-radius: 8px;
+                }
+            
+            }
+        }
+    }
+}
+
+
+@media only screen and (min-width: 1024px) {
+
+    .container04 {
+        @include position(relative, null, null, null, null);
+        @include transition(transition, all 1s ease-out);
+        overflow: hidden;
+        height:100vh;
+        opacity: 1;
+
+        .content_wrap {
+            @include position(absolute, 44%, null, null, 50%);
+            @include transform(translate(-50%, -50%));
+            @include size(980px, 440px);
+
+            .title_04_wrap {
+                text-align: right;
+        
+                .title_04 {
+                    @include no-select;
+                    color: #fff;
+                    font-size: 52px;
+                    font-family: 'Noto Sans KR', sans-serif;
+                    font-weight: 800;
+                    text-transform: uppercase;
+                    line-height: 80px;
+                    letter-spacing: -0.5px;
+                }
+            }
+
+            .line_04 {
+                @include no-select;
+                @include size(320px, 8px);
+                @include position(absolute, 256px, 8px, null, null);
+                border-radius: 8px;
+                background:linear-gradient(90deg, #67AFC2 ,#68839F);
+            }
+
+            .desc_04_wrap {
+                @include no-select;
+                margin:40px 8px;
+                text-align: right;
+
+                .desc_title {
+                    color: #b4b4b4;
+                    font-size: 16px;
+                    font-family: 'Noto Sans KR', sans-serif;
+                    font-weight: 300;
+                    text-transform: none;
+                    line-height: 28px;
+                    letter-spacing: 0.1px;
+                }
+
+                .desc_line {
+                    @include no-select;
+                    @include size(240px, 2px);
+                    @include position(absolute, 354px, 16px, null, null);
+                    border-radius: 8px;
+                    background:#b4b4b4;
+                }
+
+                .desc_info {
+                    margin:32px 8px 8px;
+                    text-align: right;
+
+                    span {
+                        @include no-select;
+                        color: status(caution);
+                        font-size: 14px;
+                        font-family: 'Noto Sans KR', sans-serif;
+                        font-weight: 300;
+                        text-transform: none;
+                        line-height: 28px;
+                        letter-spacing: 0.1px;
+                    }
+                }
+            }
+
+            .img_04_wrap {
+                @include position(absolute, 32px, null, null, 0px);
+                .img_furnish{
+                    @include no-select;
+                    @include size(480px, 384px);
+                    @include box-shadow(0, 4px, 32px, #1641482c);
+                    border-radius: 0px 8px 8px 0px;
+                }
+            
+            }
+        }
+    }
+}

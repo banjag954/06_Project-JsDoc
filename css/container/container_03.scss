@@ -1,0 +1,303 @@
+// Modules and Variables
+@import './base/_mixins',
+        './base/_color',
+        './base/_typography';
+
+// Partials
+@import './partials/_keyframe';
+
+@media only screen and (max-width: 480px) {
+
+    .container03 {
+        @include position(relative, null, null, null, null);
+        @include transition(transition, all 1s ease-out);
+        overflow: hidden;
+        height:830px;
+        opacity: 0;
+
+        .content_wrap {
+            @include position(absolute, 50%, null, null, 50%);
+            @include transform(translate(-50%, -50%));
+            @include size(100vw, 680px);
+
+            .title_03_wrap {
+                text-align: center;
+        
+                .title_03 {
+                    @include no-select;
+                    color: #fff;
+                    font-size: 30px;
+                    font-family: 'Noto Sans KR', sans-serif;
+                    font-weight: 800;
+                    text-transform: uppercase;
+                    line-height: 44px;
+                    letter-spacing: -0.5px;
+                }
+            }
+
+            .line_03 {
+                @include no-select;
+                @include size(300px, 8px);
+                @include position(relative, 24px, null, null, 50%);
+                @include transform(translate(-50%, -50%));
+                
+                border-radius: 8px;
+                background:color(mainColor);
+            }
+
+            .desc_03_wrap {
+                text-align: center;
+                margin-top: 8px;
+
+                .desc_title{
+                    @include no-select;
+                    margin-bottom:8px;
+
+                    h5 {
+                        color: #fff;
+                        font-size: 24px;
+                        font-family: 'Noto Sans KR', sans-serif;
+                        font-weight: 500;
+                        text-transform: uppercase;
+                        line-height: 36px;
+                        letter-spacing: 0.1px;
+                    }
+                }
+
+                .desc_line{
+                    @include no-select;
+                    @include size(240px, 5px);
+                    @include position(relative, 8px, null, null, 50%);
+                    @include transform(translate(-50%, -50%));
+        
+                    text-align: center;
+                    border-radius: 2px;
+                    background:linear-gradient(90deg, #02224c ,#0c7775);
+                }
+
+                .desc_info {
+                    @include no-select;
+                    @include size (300px, auto);
+                    @include position(relative, 50%, null, null, 50%);
+                    @include transform(translate(-50%, -50%));
+                    margin-top:56px;
+            
+                    span {
+                        color: #b4b4b4;
+                        font-size: 14px;
+                        font-family: 'Noto Sans KR', sans-serif;
+                        font-weight: 300;
+                        text-transform: none;
+                        line-height: 20px;
+                        letter-spacing: -0.2px;
+                    }
+                }
+            }
+
+            .img_wrap {
+                @include position(absolute, 80%, null, null, 50%);
+                @include transform(translate(-50%, -50%));
+
+                #main_img {
+                    max-width: 300px;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 481px) and (max-width: 1023px) {
+
+    .container03 {
+        @include position(relative, null, null, null, null);
+        @include transition(transition, all 1s ease-out);
+        overflow: hidden;
+        min-height:1200px;
+        opacity: 0;
+
+        .content_wrap {
+            @include position(absolute, 50%, null, null, 50%);
+            @include transform(translate(-50%, -50%));
+            min-height: 480px;
+
+            .title_03_wrap {
+                text-align: center;
+        
+                .title_03 {
+                    @include no-select;
+                    color: #fff;
+                    font-size: 42px;
+                    font-family: 'Noto Sans KR', sans-serif;
+                    font-weight: 800;
+                    text-transform: uppercase;
+                    line-height: 64px;
+                    letter-spacing: -0.5px;
+                }
+            }
+
+            .line_03 {
+                @include no-select;
+                @include size(400px, 8px);
+                @include position(relative, 24px, null, null, 50%);
+                @include transform(translate(-50%, -50%));
+                
+                border-radius: 8px;
+                background:color(mainColor);
+            }
+
+            .desc_03_wrap {
+                text-align: center;
+                margin-top: 40px;
+
+                .desc_title{
+                    @include no-select;
+                    margin-bottom:8px;
+
+                    h5 {
+                        color: #fff;
+                        font-size: 24px;
+                        font-family: 'Noto Sans KR', sans-serif;
+                        font-weight: 500;
+                        text-transform: uppercase;
+                        line-height: 36px;
+                        letter-spacing: 0.1px;
+                    }
+                }
+
+                .desc_line{
+                    @include no-select;
+                    @include size(240px, 5px);
+                    @include position(relative, 8px, null, null, 50%);
+                    @include transform(translate(-50%, -50%));
+        
+                    text-align: center;
+                    border-radius: 2px;
+                    background:linear-gradient(90deg, #02224c ,#0c7775);
+                }
+
+                .desc_info {
+                    @include no-select;
+                    @include size (300px, auto);
+                    @include position(relative, 50%, null, null, 50%);
+                    @include transform(translate(-50%, -50%));
+                    margin-top:56px;
+            
+                    span {
+                        color: #b4b4b4;
+                        font-size: 14px;
+                        font-family: 'Noto Sans KR', sans-serif;
+                        font-weight: 300;
+                        text-transform: none;
+                        line-height: 20px;
+                        letter-spacing: -0.2px;
+                    }
+                }
+            }
+
+            .img_wrap {
+                @include position(relative, 50%, null, null, 50%);
+                @include transform(translate(-50%, -50%));
+                margin-top: 240px;
+                #main_img {
+                    width: 560px;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+
+    .container03 {
+        @include position(relative, null, null, null, null);
+        @include transition(transition, all 1s ease-out);
+        overflow: hidden;
+        height:92rem;
+        opacity: 0;
+
+        .content_wrap {
+            @include position(absolute, 52%, null, null, 50%);
+            @include transform(translate(-50%, -50%));
+            @include size(100vw, 1180px);
+
+            .title_03_wrap {
+                text-align: center;
+        
+                .title_03 {
+                    @include no-select;
+                    color: #fff;
+                    font-size: 68px;
+                    font-family: 'Noto Sans KR', sans-serif;
+                    font-weight: 800;
+                    text-transform: uppercase;
+                    line-height: 90px;
+                    letter-spacing: -0.5px;
+                }
+            }
+
+            .line_03 {
+                @include no-select;
+                @include size(640px, 8px);
+                @include position(relative, 16px, null, null, 50%);
+                @include transform(translate(-50%, -50%));
+                border-radius: 8px;
+                background: color(mainColor);
+                // background:linear-gradient(90deg, #770c2b ,#02224c);
+            }
+
+            .desc_03_wrap {
+                text-align: center;
+                margin-top: 64px;
+
+                .desc_title{
+                    @include no-select;
+                    margin-bottom:8px;
+
+                    h5 {
+                        color: #fff;
+                        font-size: 24px;
+                        font-family: 'Noto Sans KR', sans-serif;
+                        font-weight: 500;
+                        text-transform: uppercase;
+                        line-height: 36px;
+                        letter-spacing: 0.1px;
+                    }
+                }
+
+                .desc_line{
+                    @include no-select;
+                    @include size(400px, 5px);
+                    @include position(relative, 8px, null, null, 50%);
+                    @include transform(translate(-50%, -50%));
+        
+                    text-align: center;
+                    border-radius: 2px;
+                    background:linear-gradient(90deg, #02224c ,#0c7775);
+                }
+
+                .desc_info {
+                    @include no-select;
+                    margin-top:32px;
+                    span {
+                        color: #b4b4b4;
+                        font-size: 18px;
+                        font-family: 'Noto Sans KR', sans-serif;
+                        font-weight: 300;
+                        text-transform: none;
+                        line-height: 28px;
+                        letter-spacing: 0.1px;
+                    }
+                }
+            }
+
+            .img_wrap {
+                @include position(absolute, 72%, null, null, 50%);
+                @include transform(translate(-50%, -50%));
+
+                #main_img {
+                    max-width: 920px;
+                }
+            }
+        }
+    }
+}

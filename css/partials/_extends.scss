@@ -1,0 +1,374 @@
+// Modules and Variables
+@import './base/_mixins',
+        './base/_color';
+
+%common_channels {
+    @include size(468px, 64px);
+
+    .btn_channel {
+        @include no-select;
+        line-height: 64px;
+        background: subColor(primary_light);
+        outline: none;
+        border:0;
+        float: left;
+        border-right: 1px solid subColor(primary);
+
+        color: subColor(primary_dark);
+        text-align: center;
+        font-weight: 500;
+        font-size: 14px;
+        cursor: pointer;
+
+        &:last-child {
+            border-right: none;
+        }
+    }
+}
+
+%common_banners {
+    @include position(absolute, null, null, null, null);
+    @include size(468px, 160px);
+
+    .btn_cancel {
+        @extend %common_editorBtns;
+        @include position(relative, 16px, null, null, -16px);
+        z-index: 1;
+        float: right;
+        background: btnColor(whiteColor);
+        &:hover {
+            width: 104px;
+            background:btnColor(whiteColor_hover);
+        }
+        &:active {
+            width: 104px;
+            background:btnColor(whiteColor_active);
+        }
+    }
+
+    .banner_img {
+        @include position(relative, 0px, null, null, 0px);
+        @include size(468px, 160px);
+        display: block;
+
+        img {
+            @include position(absolute, null, null, null, null);
+            @include size(468px, 160px);
+        }
+    }
+
+    //channels
+    .btn_channels {
+        @include position(absolute, 160px, null, null, null);
+        @extend %common_channels;
+    }
+}
+
+%common_editorBtns {
+    @include size (48px, 48px);
+    @include box-shadow(0px, 4px, 8px, rgba(22,65,76,0.32));
+    position: relative;
+    display: block;
+    border-radius: 4px;
+    cursor: pointer;
+  
+    &:hover {
+      @include box-shadow(0px, 4px, 16px, rgba(22,65,76,0.32));
+      .btn_icon {
+          fill: color(mainColor);
+      }
+      .btn_name {
+          display: block;
+          color: color(mainColor);
+      }
+    }
+    &:active {
+      @include box-shadow(0px, 2px, 4px, rgba(22,65,76,0.48));
+      .btn_icon {
+          fill: color(mainColor_dark);
+      }
+      .btn_name {
+          display: block;
+          color: color(mainColor_dark);
+      }
+    }
+    
+    .btn_icon {
+      @include position(absolute, 12px, null, null, 12px);
+      @include size (24px, 24px);
+      display: block;
+      fill: subColor(primary);
+    }
+    
+    .btn_name {
+      @include position(absolute, 12px, 16px, null, null);
+      @include no-select;
+      display: none;
+      float: right;
+      text-align: right;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 24px;
+    }
+}
+
+
+%common_Popup {
+    @include position(fixed, 0, null, null, 0);
+    @include size(100%, 100vh);
+    @include box-sizing(border-box);
+    visibility: hidden;
+    opacity: 0;
+    z-index: 10000;
+    background: rgba(255, 255, 255, 0.9);
+    transition : all, 0.3s ease;
+
+    .popup_detail {
+        @include position(absolute, 50%, null, null, 50%);
+        @include transform(translate(-50%, -50%));
+        @include size(480px, 560px);
+        @include box-shadow(0px, 2px, 48px, rgba(22,65,76,0.32));
+        background-color: btnColor(whiteColor);
+        border-radius: 16px;
+
+
+        .popup_img {
+            width: 480px;
+            border-radius:16px 16px 0 0;
+
+            .img_back, .img_new, .img_save {
+                width: 480px;
+                border-radius:16px 16px 0 0;
+            }
+        }
+        
+        .guide_img {
+            @include size(480px, 320px);
+            background: #fff;
+            border-radius:16px 16px 0 0;
+        }
+    }
+}
+
+
+%common_setting {
+    
+    margin-bottom:48px;
+
+    .setting_name {
+        @include no-select;
+        margin-bottom:8px;
+        display: block;
+
+        font-weight: 600;
+        font-size: 14px;
+        text-align: left;
+        line-height: 18px;
+        color:color(mainColor);
+    }
+
+    .setting_slider {
+        @include size(65%, 3px);
+        @include appearance(none);
+        margin-top:25px;
+        display: inline-block;
+        border-radius: 2px;
+        background: bgColor(thirdary);
+        outline: none;
+
+        &::-webkit-slider-thumb {
+            @include appearance(none);
+            @include size(38px, 38px);
+            @include box-sizing(border-box);
+            @include box-shadow(0px,2px,4px, rgba(22,65,76,0.24));
+            background:subColor(primary);
+            border:3px solid #fff;
+            border-radius: 50%;
+            cursor: pointer;
+
+            &:hover::-webkit-slider-thumb {
+                @include box-shadow(0px,2px,8px, rgba(22,65,76,0.24));
+            }
+            &:active::-webkit-slider-thumb {
+                @include box-shadow(0px,2px,0px, rgba(22,65,76,0.32));
+            }
+        }
+
+        &::-moz-range-thumb {
+            @include appearance(none);
+            @include size(32px, 32px);
+            background:btnColor(darkColor);
+            border-radius: 50%;
+            @include box-shadow(0px,4px,8px, rgba(22,65,76,0.32));
+            cursor: pointer;
+        }
+    }
+
+    .setting_input {
+        @include position (relative, null, 32px, null, null);
+        display: inline-block;
+        float: right;
+
+        .setting_number {
+            @include size(43px, 48px);
+            position: relative;
+            padding-right:28px;
+            display: inline-block;
+
+            border: none;
+            background:bgColor(secondary);
+            border:0;
+            outline: none;
+            color:#4b4b4b;
+            text-align: right;
+            line-height: 24px;
+            font-weight: 400;
+            font-size: 16px;
+        }
+
+        .unit {
+            @include position (absolute, null, 8px, 16px, null);
+            font-size: 12px;
+            font-weight: 500;
+            text-align: left;
+            color:#777;
+        }
+
+        .value_increase {
+            @include position (absolute, null, null, 0px, -32px);
+            @include size(32px, 50px);
+
+            background: color(mainColor);
+            text-align: center;
+            border-radius: 4px 0 0 4px;
+            border:0;
+            cursor:pointer;
+            &:hover {
+                background:color(mainColor_light);
+            }
+            &:active {
+                background:color(mainColor_dark);
+            }
+
+            span {
+                color:#fff;
+                font-size: 14px;
+                display: inline-block;
+            }
+        }
+
+        .value_decrease {
+            @include position (absolute, null, -31px, 0, null);
+            @include size(32px, 50px);
+
+            background: color(mainColor);
+            text-align: center;
+            border-radius: 0 4px 4px 0;
+            border:0;
+            cursor:pointer;
+            &:hover {
+                background:color(mainColor_light);
+            }
+            &:active {
+                background:color(mainColor_dark);
+            }
+
+            span {
+                color:#fff;
+                font-size: 14px;
+                display: inline-block;
+            }
+        }
+
+    }
+}
+
+
+%scroll_bar{
+    &::-webkit-scrollbar {
+        width:8px;  
+    }
+    &::-webkit-scrollbar-track {
+        background: #f1f1f1;      
+    }
+    &::-webkit-scrollbar-thumb {
+        background: #b4b4b4;
+        &:hover {
+            background: #4b4b4b;     
+        }
+    }
+}
+
+%btn_checkbox {
+    @include box-shadow(0px, 2px, 4px, rgba(22,65,76,0.16));
+    border-radius: 4px;
+    margin-bottom: 16px;
+    &:hover {
+        @include box-shadow(0px, 4px, 4px, rgba(22,65,76,0.24));
+    }
+    &:active {
+        @include box-shadow(0px, 2px, 2px, rgba(22,65,76,0.16));
+    }
+
+    .btn_checkbox_cb {
+        vertical-align: middle;
+        display: none;
+
+        &:checked ~ .parts_checkbox {
+            background: color(mainColor);
+            .btn_checkbox_mark {
+                border-color: color(mainColor_dark);
+                background: btnColor(whiteColor);
+                &::before {
+                    display: block;
+                }
+            }
+            .btn_checkbox_desc {
+                color: btnColor(whiteColor);
+            }  
+        }
+    }
+
+    .parts_checkbox {
+        @include no-select;
+        @include size(420px, 64px);
+        background-color: btnColor(whiteColor);
+        display: block;
+        border-radius: 4px;
+        text-align: right;
+        transition: background-color .1s ease-in-out;
+        cursor: pointer;
+
+        .btn_checkbox_mark {
+            @include position(absolute, null, null, null, 24px);
+            @include size(32px, 32px);
+            margin:14px;
+            display: inline-block;
+            vertical-align: middle;
+            background:subColor(secondary_light);
+            border: 2px solid subColor(secondary);
+            border-radius: 8px;
+
+            &::before {
+                @include position(absolute, 50%, null, null, 50%);
+                @include size(8px, 4px);
+                @include transform(rotate(-45deg));
+                content: '';
+                display: none;
+                margin: -5px 0 0 -6px;
+                border: 2px solid color(mainColor_dark);
+                border-width: 0 0 4px 4px;
+            }
+        }
+
+        .btn_checkbox_desc {
+            @include position(relative, 19px, 16px, null, null);
+            
+            font-weight: 600;
+            font-size: 20px;
+            line-height: 30px;
+            color:#4b4b4b;
+        }
+
+    }
+}

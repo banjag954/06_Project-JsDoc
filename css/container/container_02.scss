@@ -1,0 +1,244 @@
+// Modules and Variables
+@import './base/_mixins',
+        './base/_color',
+        './base/_typography';
+
+// Partials
+@import './partials/_keyframe';
+
+@media only screen and (max-width: 480px) {
+    .container02 {
+        @include position(relative, null, null, null, null);
+        @include transition(transition, all .4s ease-out);
+        height:100vh;
+        opacity: 0;
+
+        .content_wrap {
+            @include position(absolute, 50%, null, null, 50%);
+            @include transform(translate(-50%, -50%));
+            @include size(100vw, 480px);
+
+            .title_02_wrap {
+                text-align: center;
+        
+                .title_02 {
+                    @include no-select;
+                    color: #fff;
+                    font-size: 30px;
+                    font-family: 'Noto Sans KR', sans-serif;
+                    font-weight: 800;
+                    text-transform: uppercase;
+                    line-height: 44px;
+                    letter-spacing: -0.5px;
+                }
+            }
+
+            .line_02 {
+                @include no-select;
+                @include size(300px, 8px);
+                @include position(relative, 24px, null, null, 50%);
+                @include transform(translate(-50%, -50%));
+                
+                border-radius: 8px;
+                background:color(mainColor);
+            }
+
+            .desc_02_wrap {
+                @include size(300px, auto);
+                @include position(relative, 24%, null, null, 50%);
+                @include transform(translate(-50%, -50%));
+                text-align: center;
+                // margin-top: 24px;
+
+                .text {
+                    @include no-select;
+                    color: #b4b4b4;
+                    font-size: 14px;
+                    font-family: 'Noto Sans KR', sans-serif;
+                    font-weight: 300;
+                    text-transform: none;
+                    line-height: 24px;
+                    letter-spacing: -0.4px;
+                }
+            }
+
+            .container_02_imgs {
+                display: none;
+            }
+        }
+    }
+}
+
+
+@media only screen and (min-width: 481px) and (max-width: 1023px) {
+    .container02 {
+        @include position(relative, null, null, null, null);
+        @include transition(transition, all .4s ease-out);
+        overflow: hidden;
+        height:780px;
+        opacity: 0;
+
+        .content_wrap {
+            @include position(absolute, 50%, null, null, 50%);
+            @include transform(translate(-50%, -50%));
+            @include size(100vw, 640px);
+
+            .title_02_wrap {
+                text-align: center;
+        
+                .title_02 {
+                    @include no-select;
+                    color: #fff;
+                    font-size: 42px;
+                    font-family: 'Noto Sans KR', sans-serif;
+                    font-weight: 800;
+                    text-transform: uppercase;
+                    line-height: 64px;
+                    letter-spacing: -0.5px;
+                }
+            }
+
+            .line_02 {
+                @include no-select;
+                @include size(400px, 8px);
+                @include position(relative, 24px, null, null, 50%);
+                @include transform(translate(-50%, -50%));
+                
+                border-radius: 8px;
+                background:color(mainColor);
+            }
+
+            .desc_02_wrap {
+                @include size(560px, null);
+                @include position(relative, 24%, null, null, 50%);
+                @include transform(translate(-50%, -50%));
+                text-align: center;
+                margin-top: 32px;
+
+                .text {
+                    @include no-select;
+                    color: #b4b4b4;
+                    font-size: 0.7rem;
+                    font-family: 'Noto Sans KR', sans-serif;
+                    font-weight: 300;
+                    text-transform: none;
+                    line-height: 24px;
+                    letter-spacing: 0.1px;
+                }
+            }
+
+            .container_02_imgs {
+                display: none;
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+    .container02 {
+        @include position(relative, null, null, null, null);
+        @include transition(transition, all .4s ease-out);
+        overflow: hidden;
+        height:72rem;
+        opacity: 0;
+
+        .content_wrap {
+            @include position(absolute, 50%, null, null, 50%);
+            @include transform(translate(-50%, -50%));
+            @include size(100vw, 1024px);
+
+            .title_02_wrap {
+                text-align: center;
+        
+                .title_02 {
+                    @include no-select;
+                    color: #fff;
+                    font-size: 68px;
+                    font-family: 'Noto Sans KR', sans-serif;
+                    font-weight: 800;
+                    text-transform: uppercase;
+                    line-height: 90px;
+                    letter-spacing: -0.5px;
+                    display: block;
+                }
+            }
+
+            .line_02 {
+                @include no-select;
+                @include size(640px, 8px);
+                @include position(relative, 24px, null, null, 50%);
+                @include transform(translate(-50%, -50%));
+                
+                border-radius: 8px;
+                background:color(mainColor);
+            }
+
+            .desc_02_wrap {
+                text-align: center;
+                margin-top: 64px;
+
+                .text {
+                    @include no-select;
+                    color: #b4b4b4;
+                    font-size: 18px;
+                    font-family: 'Noto Sans KR', sans-serif;
+                    font-weight: 300;
+                    text-transform: none;
+                    line-height: 28px;
+                    letter-spacing: 0.1px;
+                }
+            }
+
+            .container_02_imgs {
+                @include position(absolute, 75%, null, null, 50%);
+                @include transform(translate(-50%, -50%));
+
+                .shapes {
+                    @include position(absolute, 188px, null, null, 288px);
+                    @include size(320px, 232px);
+                    @include animation(button, 0.6s, 3.2s,null, infinite, alternate);
+                }
+
+                .btn_delete {
+                    @include position(absolute, null, 170px, 258px, null);
+                    @include size(100px, 80px);
+                    @include animation(button, null, 3.2s,null, infinite, alternate);
+                }
+
+                .btn_face {
+                    @include position(absolute, null, 234px, 226px, null);
+                    @include size(100px, 80px);
+                    @include animation(button, 0.6s, 3.2s,null, infinite, alternate);
+                }
+
+                .btn_line {
+                    @include position(absolute, null, 302px, 166px, null);
+                    @include size(100px, 80px);
+                    @include animation(button, null, 3.2s,null, infinite, alternate);
+                }
+
+                .btn_zoom {
+                    @include position(absolute, 48px, 268px, null, null);
+                    @include size(77px, 62px);
+                    @include animation(button, null, 3.2s,null, infinite, alternate);
+                }
+
+                .btn_fitScreen {
+                    @include position(absolute, 80px, 240px, null, null);
+                    @include size(60px, 48px);
+                    @include animation(button, 0.4s, 3.2s,null, infinite, alternate);
+                }
+
+                .btn_unit {
+                    @include position(absolute, null, 40px, 380px, null);
+                    @include size(77px, 62px);
+                    @include animation(button, null, 3.2s,null, infinite, alternate);
+                }
+
+                .main_img{
+                    max-width: 880px;
+                }
+            }
+        }
+    }
+}

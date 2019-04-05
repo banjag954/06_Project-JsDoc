@@ -1,0 +1,68 @@
+// Modules and Variables
+@import './base/_mixins',
+        './base/_color',
+        './base/_typography';
+
+// Partials
+@import './partials/_keyframe';
+
+@media only screen and (max-width: 768px) {
+    .bottom_nav {
+        display: none;
+    }
+}
+
+@media only screen and (min-width: 769px) {
+
+    .bottom_nav {
+        @include size (100vw, 48px);
+        @include position(fixed, null, 0, 0, 0);
+        background: #0d18194a;
+        z-index: 1000;
+
+        .bottom_sign {
+            @include position(absolute, 50%, 24px, null, null);
+            @include transform(translate(0%, -50%));
+
+            .sing_info{
+                color: #fff;
+                font-size: 12px;
+                font-family: 'Noto Sans KR', sans-serif;
+                font-weight: 300;
+                text-transform: none;
+                line-height: 24px;
+                letter-spacing: 0.1px;
+            }
+        }
+
+        .bottom_logo {
+            @include position(absolute, 50%, null, null, 50%);
+            @include transform(translate(-50%, -50%));
+
+            .img_logo {
+                @include size(30px,24px);
+            }
+        }
+
+        .bottom_buttons{
+            @include position(absolute, 50%, null, null, 24px);
+            @include transform(translate(0%, -50%));
+
+            .bottom_button{
+                color: #fff;
+                font-size: 12px;
+                font-family: 'Noto Sans KR', sans-serif;
+                font-weight: 300;
+                text-transform: none;
+                line-height: 24px;
+                letter-spacing: 0.1px;
+                text-decoration: none;
+                text-transform: uppercase;
+                margin: 16px;
+                
+            }
+
+        }
+
+    }
+}

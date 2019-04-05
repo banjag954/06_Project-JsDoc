@@ -1,0 +1,25 @@
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" width="260" height="193" viewBox="0 0 260 193">
+  <defs>
+    <linearGradient id="shape_01-c" x1="38.236%" x2="61.305%" y1="22.459%" y2="77.152%">
+      <stop offset="0%" stop-color="#0A3D62"/>
+      <stop offset="100%" stop-color="#B71540"/>
+    </linearGradient>
+    <polygon id="shape_01-b" points="6 67.308 91.462 6 227 101.692 141.538 163"/>
+    <filter id="shape_01-a" width="125.5%" height="134%" x="-12.7%" y="-14.4%" filterUnits="objectBoundingBox">
+      <feMorphology in="SourceAlpha" operator="dilate" radius="6" result="shadowSpreadOuter1"/>
+      <feOffset dy="4" in="shadowSpreadOuter1" result="shadowOffsetOuter1"/>
+      <feMorphology in="SourceAlpha" radius="1" result="shadowInner"/>
+      <feOffset dy="4" in="shadowInner" result="shadowInner"/>
+      <feComposite in="shadowOffsetOuter1" in2="shadowInner" operator="out" result="shadowOffsetOuter1"/>
+      <feGaussianBlur in="shadowOffsetOuter1" result="shadowBlurOuter1" stdDeviation="6"/>
+      <feColorMatrix in="shadowBlurOuter1" values="0 0 0 0 0   0 0 0 0 0.187115713   0 0 0 0 0.256935009  0 0 0 0.4 0"/>
+    </filter>
+  </defs>
+  <g fill="none" fill-rule="evenodd" transform="translate(13 8)">
+    <g stroke-linecap="round" stroke-linejoin="round">
+      <use fill="#000" filter="url(#shape_01-a)" xlink:href="#shape_01-b"/>
+      <path stroke="url(#shape_01-c)" stroke-width="6" d="M0.826113687,67.3271925 L91.4476606,2.31785591 L232.173886,101.672808 L141.552339,166.682144 L0.826113687,67.3271925 Z"/>
+    </g>
+    <path stroke="#FFF" stroke-width="4" d="M3.5 72C.485891575 72-2 69.6449448-2 66.6842105-2 63.5880572 1.17282857 62 4.5 62 7.51410843 62 10 64.3550552 10 67.3157895 10 70.4119428 6.82717143 72 3.5 72zM91.5 8C88.4858916 8 86 5.64494482 86 2.68421053 86-.411942776 89.1728286-2 92.5-2 95.5141084-2 98 .355055176 98 3.31578947 98 6.41194278 94.8271714 8 91.5 8zM140.5 170C137.485892 170 135 167.644945 135 164.684211 135 161.588057 138.172829 160 141.5 160 144.514108 160 147 162.355055 147 165.315789 147 168.411943 143.827171 170 140.5 170zM228.5 106C225.485892 106 223 103.644945 223 100.684211 223 97.5880572 226.172829 96 229.5 96 232.514108 96 235 98.3550552 235 101.315789 235 104.411943 231.827171 106 228.5 106z"/>
+  </g>
+</svg>

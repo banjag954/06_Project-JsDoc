@@ -1,0 +1,13 @@
+// Modules and Variables
+@import './base/_mixins',
+        './base/_color',
+        './base/_typography';
+
+// Partials
+@import './partials/_extends';
+
+// 만약 공용 css를 넣어야 할 경우 넣을 것.
+body {
+  background:#0d1618 !important;
+  @include size (null, 100vh);
+}

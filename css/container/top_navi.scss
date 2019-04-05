@@ -1,0 +1,170 @@
+// Modules and Variables
+@import './base/_mixins',
+        './base/_color',
+        './base/_typography';
+
+
+
+@media only screen and (max-width: 768px) {
+
+    .top_nav {
+        @include size (100vw, 56px);
+        @include position(fixed, 0, 0, null, 0);
+        background: #0d181999;
+        z-index: 1000;
+        
+        .top_nav_left {
+            @include position(absolute, 16px, null, null, 16px);
+            img {
+                @include size (114px, 24px);
+                @include no-select;
+                cursor: pointer;
+            }
+        }
+
+        .top_nav_center {
+            @include position(absolute, 0, 16px, null, null);
+
+            .btn_navi {
+                @include transition(transition,all 0.3s);
+                list-style: none;
+                text-decoration: none;
+                display: inline-block;
+                margin: 0 4px;
+
+                text-align: center;
+                color: #fff;
+                font-size: 12px;
+                font-weight: 400;
+                text-transform: uppercase;
+                line-height: 56px;
+                letter-spacing: 0.25px;
+                cursor: pointer;
+                &:hover {
+                    color: #b4b4b4;
+                }
+
+                //stroke
+                @include position (relative, null,null,null,null);
+
+                &:after, :before {
+                    @include transition(transition,all 0.5s);
+                }
+                &:after {
+                    @include position (absolute,null,0,0,0);
+                    @include size (0%, null);
+                    
+                    margin: auto;
+                    content: '.';
+                    color: transparent;
+                    background: color(mainColor);
+                    height: 2px;
+                }
+                &:hover:after {
+                    @include size (100%, null);
+                }
+            }
+        }
+
+        .top_nav_right {
+            display: none;
+        }
+    }
+}        
+
+@media only screen and (min-width: 769px) {
+
+    .top_nav {
+        @include size (100vw, 82px);
+        @include position(fixed, 0, 0, null, 0);
+        background: #0d181999;
+        z-index: 1000;
+        
+        .top_nav_left {
+            @include position(absolute, 26px, null, null, 32px);
+            img {
+                @include size (142px, 30px);
+                @include no-select;
+                cursor: pointer;
+            }
+        }
+
+        .top_nav_center {
+            @include position(absolute, 50%, null, null, 50%);
+            @include transform(translate(-50%, -50%));
+
+            .btn_navi {
+                @include transition(transition,all 0.3s);
+                list-style: none;
+                text-decoration: none;
+                display: inline-block;
+                padding: 16px;
+                margin: 0 8px;
+
+                text-align: center;
+                color: #fff;
+                font-size: 16px;
+                font-weight: 400;
+                text-transform: uppercase;
+                line-height: 24px;
+                letter-spacing: 0.75px;
+                cursor: pointer;
+                &:hover {
+                    color: #b4b4b4;
+                }
+
+                //stroke
+                @include position (relative, null,null,null,null);
+
+                &:after, :before {
+                    @include transition(transition,all 0.5s);
+                }
+                &:after {
+                    @include position (absolute,null,0,0,0);
+                    @include size (0%, null);
+                    
+                    margin: auto;
+                    content: '.';
+                    color: transparent;
+                    background: color(mainColor);
+                    height: 2px;
+                }
+                &:hover:after {
+                    @include size (100%, null);
+                }
+            }
+        }
+
+        .top_nav_right {
+            @include position(absolute, 16px, 32px, null, null);
+
+            .btn_inquiry{
+                @include size (135px, 50px);
+                @include transition(transition,all 0.3s);
+                list-style: none;
+                text-decoration: none;
+                display: block;
+                border: 2px solid btnColor(whiteColor);
+                border-radius: 4px;
+
+                text-align: center;
+                color: btnColor(whiteColor);
+                font-size: 14px;
+                font-weight: 500;
+                text-transform: capitalize;
+                line-height: 50px;
+                letter-spacing: 0.75px;
+                cursor: pointer;
+
+                &:hover {
+                    background: btnColor(whiteColor_hover);
+                    color:color(mainColor);
+                }
+                &:active {
+                    background: btnColor(whiteColor_active);
+                    color:color(mainColor_dark);
+                }
+            }
+        }
+    }
+}

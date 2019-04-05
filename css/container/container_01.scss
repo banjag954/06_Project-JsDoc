@@ -1,0 +1,415 @@
+// Modules and Variables
+@import './base/_mixins',
+        './base/_color',
+        './base/_typography';
+
+// Partials
+@import './partials/_keyframe';
+
+@media only screen and (max-width: 480px) {
+    .container01 {
+        @include position(relative, null, null, null, null);
+        @include transition(transition, all .4s ease-out);
+        overflow: hidden;
+        height:100vh;
+        opacity: 0;
+
+        .content_wrap {
+            @include position(absolute, 56%, null, null, 50%);
+            @include transform(translate(-50%, -50%));
+            @include size(100vw, 400px);
+
+            .subTitle01_wrap{
+                text-align: center;
+        
+                .subTitle_01 {
+                    @include no-select;
+                    color: #fff;
+                    font-size: 12px;
+                    font-family: 'Noto Sans KR', sans-serif;
+                    font-weight: 200;
+                    text-transform: uppercase;
+                    line-height: 40px;
+                    letter-spacing: 0.4px;
+                }
+            }
+
+            .line_01 {
+                @include no-select;
+                @include size(240px, 6px);
+                @include position(relative, null, null, null, 50%);
+                @include transform(translate(-50%, -50%));
+                
+                border-radius: 4px;
+                background:color(mainColor);
+            }
+
+            .title01_wrap{
+                @include position(relative, 50%, null, null, 50%);
+                @include transform(translate(-50%, -50%));
+                text-align: center;
+                margin-top: 40px;
+                display: inline-block;
+
+                .title_01{
+                    @include no-select;
+                    color: #fff;
+                    font-size: 38px;
+                    font-family: 'Noto Sans KR', sans-serif;
+                    font-weight: 800;
+                    text-transform: uppercase;
+                    line-height: 56px;
+                    letter-spacing: -0.5px;
+                }
+            }
+
+            .mainDecription01_wrap {
+                @include position(relative, 12%, null, null, 50%);
+                @include transform(translate(-50%, -50%));
+                @include size(300px,null);
+                text-align: center;
+                
+                .mainDecription_01 {
+                    @include no-select;
+                    color: #b4b4b4;
+                    font-size: 14px;
+                    font-family: 'Noto Sans KR', sans-serif;
+                    font-weight: 300;
+                    text-transform: none;
+                    line-height: 20px;
+                    letter-spacing: 0.1px;
+                }
+            }
+
+            .container_01_btn {
+                @include position(absolute, null, null, 8%, 50%);
+                @include transform(translate(-50%, -50%));
+
+                .btn_docs {
+                    @include size(240px,48px);
+                    @include transition(transition,background-color 0.3s);
+                    background: transparent;
+                    border: 2px solid #67AFC2;
+                    border-radius: 4px;
+
+                    color: #67AFC2;
+                    font-size: 16px;
+                    font-family: 'Noto Sans KR', sans-serif;
+                    font-weight: 500;
+                    text-transform: none;
+                    line-height: 28px;
+                    letter-spacing: 0.1px;
+                    cursor: pointer;
+
+                    &:hover {
+                        background: btnColor(whiteColor);
+                        border: none;
+                        opacity: 0.92;
+                    }
+                    &:active {
+                        background: btnColor(whiteColor);
+                        border: none;
+                        opacity: 1;
+                    }
+                    &:focus {
+                        outline: none;
+                    }
+                }            
+            }
+        }
+
+        .bg_container_01 {
+            max-width: 100vw;
+            min-height: 100%;
+            margin-top: -80px;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+
+            &:after {
+                pointer-events: none;
+                content: '';
+                display: block;
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                height: 75vh;
+                background: linear-gradient(to bottom, rgba(20,22,23,0) 0%, #141617 80%);
+                z-index: 10;
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 481px) and (max-width: 1023px) {
+    .container01 {
+        @include position(relative, null, null, null, null);
+        @include transition(transition, all .4s ease-out);
+        overflow: hidden;
+        height:100vh;
+        opacity: 0;
+
+        .content_wrap {
+            @include position(absolute, 50%, null, null, 50%);
+            @include transform(translate(-50%, -50%));
+            @include size(100vw, 300px);
+            margin-top: 32px;
+
+            .subTitle01_wrap{
+                text-align: center;
+        
+                .subTitle_01 {
+                    @include no-select;
+                    color: #fff;
+                    font-size: 10px;
+                    font-family: 'Noto Sans KR', sans-serif;
+                    font-weight: 200;
+                    text-transform: uppercase;
+                    line-height: 40px;
+                    letter-spacing: 0.4px;
+                }
+            }
+
+            .line_01 {
+                @include no-select;
+                @include size(240px, 6px);
+                @include position(relative, null, null, null, 50%);
+                @include transform(translate(-50%, -50%));
+                
+                border-radius: 4px;
+                background:color(mainColor);
+            }
+
+            .title01_wrap{
+                @include position(relative, 50%, null, null, 50%);
+                @include transform(translate(-50%, -50%));
+                text-align: center;
+                margin-top: 24px;
+                display: inline-block;
+
+                .title_01{
+                    @include no-select;
+                    color: #fff;
+                    font-size: 38px;
+                    font-family: 'Noto Sans KR', sans-serif;
+                    font-weight: 800;
+                    text-transform: uppercase;
+                    line-height: 56px;
+                    letter-spacing: -0.5px;
+                }
+            }
+
+            .mainDecription01_wrap {
+                @include position(relative, 8%, null, null, 50%);
+                @include transform(translate(-50%, -50%));
+                @include size(310px,null);
+                text-align: center;
+                
+                .mainDecription_01 {
+                    @include no-select;
+                    color: #b4b4b4;
+                    font-size: 11px;
+                    font-family: 'Noto Sans KR', sans-serif;
+                    font-weight: 300;
+                    text-transform: none;
+                    line-height: 20px;
+                    letter-spacing: -0.5px;
+                }
+            }
+
+            .container_01_btn {
+                @include position(absolute, null, null, 12%, 50%);
+                @include transform(translate(-50%, -50%));
+
+                .btn_docs {
+                    @include size(200px,40px);
+                    @include transition(transition,background-color 0.3s);
+                    background: transparent;
+                    border: 2px solid #67AFC2;
+                    border-radius: 4px;
+
+                    color: #67AFC2;
+                    font-size: 14px;
+                    font-family: 'Noto Sans KR', sans-serif;
+                    font-weight: 500;
+                    text-transform: none;
+                    line-height: 28px;
+                    letter-spacing: 0.1px;
+                    cursor: pointer;
+
+                    &:hover {
+                        background: btnColor(whiteColor);
+                        border: none;
+                        opacity: 0.92;
+                    }
+                    &:active {
+                        background: btnColor(whiteColor);
+                        border: none;
+                        opacity: 1;
+                    }
+                    &:focus {
+                        outline: none;
+                    }
+                }            
+            }
+        }
+
+        .bg_container_01 {
+            max-width: 100vw;
+            min-height: 100%;
+            margin-top: -80px;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+
+            &:after {
+                pointer-events: none;
+                content: '';
+                display: block;
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                height: 75vh;
+                background: linear-gradient(to bottom, rgba(20,22,23,0) 0%, #141617 80%);
+                z-index: 10;
+            }
+        }
+    }
+}
+
+
+@media only screen and (min-width: 1024px) {
+    .container01 {
+        @include position(relative, null, null, null, null);
+        @include transition(transition, all .4s ease-out);
+        // @include box-sizing(border-box);
+        overflow: hidden;
+        height:100vh;
+        opacity: 0;
+
+        .content_wrap {
+            @include position(absolute, 54%, null, null, 50%);
+            @include transform(translate(-50%, -50%));
+            @include size(100vw, 400px);
+
+            .subTitle01_wrap{
+                text-align: center;
+        
+                .subTitle_01 {
+                    @include no-select;
+                    color: #fff;
+                    font-size: 18px;
+                    font-family: 'Noto Sans KR', sans-serif;
+                    font-weight: 200;
+                    text-transform: uppercase;
+                    line-height: 40px;
+                    letter-spacing: 0.4px;
+                }
+            }
+
+            .line_01 {
+                @include no-select;
+                @include size(480px, 6px);
+                @include position(relative, 8px, null, null, 50%);
+                @include transform(translate(-50%, -50%));
+            
+                border-radius: 4px;
+                background:color(mainColor);
+            }
+
+            .title01_wrap{
+                @include position(relative, 50%, null, null, 50%);
+                @include transform(translate(-50%, -50%));
+                text-align: center;
+                margin-top: 64px;
+                display: inline-block;
+
+                .title_01{
+                    @include no-select;
+                    color: #fff;
+                    font-size: 88px;
+                    font-family: 'Noto Sans KR', sans-serif;
+                    font-weight: 800;
+                    text-transform: uppercase;
+                    line-height: 90px;
+                    letter-spacing: -0.5px;
+                }
+            }
+
+            .mainDecription01_wrap {
+                text-align: center;
+
+                .mainDecription_01 {
+                    @include no-select;
+                    color: #b4b4b4;
+                    font-size: 18px;
+                    font-family: 'Noto Sans KR', sans-serif;
+                    font-weight: 300;
+                    text-transform: none;
+                    line-height: 28px;
+                    letter-spacing: 0.1px;
+                }
+            }
+
+            .container_01_btn {
+                @include position(absolute, null, null, -6%, 50%);
+                @include transform(translate(-50%, -50%));
+
+                .btn_docs {
+                    @include size(240px,64px);
+                    @include transition(transition,background-color 0.3s);
+                    background: transparent;
+                    border: 2px solid #67AFC2;
+                    border-radius: 4px;
+
+                    color: #67AFC2;
+                    font-size: 16px;
+                    font-family: 'Noto Sans KR', sans-serif;
+                    font-weight: 500;
+                    text-transform: none;
+                    line-height: 28px;
+                    letter-spacing: 0.1px;
+                    cursor: pointer;
+
+                    &:hover {
+                        background: btnColor(whiteColor);
+                        border: none;
+                        opacity: 0.92;
+                    }
+                    &:active {
+                        background: btnColor(whiteColor);
+                        border: none;
+                        opacity: 1;
+                    }
+                    &:focus {
+                        outline: none;
+                    }
+                }            
+            }
+        }
+
+        .bg_container_01 {
+            max-width: 100vw;
+            min-height: 100%;
+            margin-top: -80px;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+
+            &:after {
+                pointer-events: none;
+                content: '';
+                display: block;
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                height: 75vh;
+                background: linear-gradient(to bottom, rgba(20,22,23,0) 0%, #141617 80%);
+                z-index: 10;
+            }
+        }
+    }
+}

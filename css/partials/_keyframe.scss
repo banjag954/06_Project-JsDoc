@@ -1,0 +1,26 @@
+// Modules and Variables
+@import './base/_mixins',
+        './base/_color',
+        './base/_typography';
+
+.fade-in {
+    opacity: 1;
+}
+
+.fade-out {
+    opacity: 0;
+}
+
+@include keyframes(button) {
+    from {
+        @include transform(translate(0, 0) scale3d(1,1,1));
+    }
+  
+    50% {
+        @include transform(translate(-4px, 8px) scale3d(1.04,1.04,1.04));
+    }
+  
+    to {
+        @include transform(translate(0, 0) scale3d(1,1,1));
+    }
+}
