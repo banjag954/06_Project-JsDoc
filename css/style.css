@@ -1230,7 +1230,7 @@ b {
     -ms-transition: all 0.4s ease-out;
     -o-transition: all 0.4s ease-out;
     overflow: hidden;
-    height: 72rem;
+    height: 78rem;
     opacity: 0; }
     .container02 .content_wrap {
       position: absolute !important;
@@ -1279,7 +1279,7 @@ b {
         background: #67AFC2; }
       .container02 .content_wrap .desc_02_wrap {
         text-align: center;
-        margin-top: 64px; }
+        margin-top: 48px; }
         .container02 .content_wrap .desc_02_wrap .text {
           -webkit-touch-callout: none;
           -webkit-user-select: none;
