@@ -43,7 +43,7 @@ TweenLite.to('.line_03', 1, { backgroundColor: '#3b4856', ease: Sine.easeInOut, 
   // build a scene_02
   var tl = new TimelineLite()
     tl.from('#desc_02_wrap', 24, {ease: Power2.easeOut, y: 200, opacity: 0}),
-    tl.from('#container_02_imgs', 24, {ease: Power2.easeOut, y: -240, opacity: 0})
+    tl.from('#container_02_imgs', 24, {ease: Sine.easeOut, y: -240, opacity: 0})
 
   var ourScene = new ScrollMagic.Scene({
     triggerElement: '#container02',
